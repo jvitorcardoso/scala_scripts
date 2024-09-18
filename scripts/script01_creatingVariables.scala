@@ -25,7 +25,7 @@ object creatingVariables {
     // Experimentando um if-else
 
     val result = if(numbers.contains(3)) "Número 3 encontrado" else "Número 3 não encontrado"
-    println(s"4 - $result")
+    println(s"4 - $result\n")
 
     // Usando pattern matching
     
@@ -38,6 +38,8 @@ object creatingVariables {
       case _ => "Something else"
 
     }
+
+    println(s"5 - What is message?\n\t$message\n")
 
     // Looping usando funções de maior ordem
 
@@ -62,6 +64,14 @@ object creatingVariables {
     // Usando Lambda com map
 
     val incrementedNumbers = numbers.map(increment)
+
+    // Conversão de tipos
+
+    val x: Int = 10
+    val y: Double = x // Type conversion automático de Inteiro para Double
+    val z: Int = y.toInt // Type casting explícito
+
+    println(s"6 - Valor de x (Inteiro): $x\n    Valor de y (Double criada a partir de um Inteiro): $y\n    Valor de z (Double que foi convertida para Inteiro): $z")
 
   }
 
