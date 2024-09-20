@@ -1,8 +1,15 @@
+/*
+ * path: ../scrips/script01_creatingVariables.scala
+ * author: jvitorcardoso
+ * date: 2024-09-19
+*/
+
+
 // Criando alguns scripts básicos
 
-object creatingVariables {
+object creatingVariables:
 
-  def main(args: Array[String]): Unit = {
+  @main def m(): Unit =
 
     // Declarando variáveis imutáveis
 
@@ -15,7 +22,7 @@ object creatingVariables {
     println(s"2 - Pi value = $pi\n")
     
     val isStudent: Boolean = true
-    val resultIsStudent: String = if(isStudent) "3 - Yes, I'm a student!\n" else "3 - Not a student.\n"
+    val resultIsStudent: String = if isStudent then "3 - Yes, I'm a student!\n" else "3 - Not a student.\n"
     println(resultIsStudent)
 
     // Estruturas de Controle e Loops
@@ -24,7 +31,7 @@ object creatingVariables {
 
     // Experimentando um if-else
 
-    val result = if(numbers.contains(3)) "Número 3 encontrado" else "Número 3 não encontrado"
+    val result = if numbers.contains(3) then "Número 3 encontrado" else "Número 3 não encontrado"
     println(s"4 - $result\n")
 
     // Usando pattern matching
@@ -47,9 +54,8 @@ object creatingVariables {
 
     // Definindo uma função
     
-    def add(x: Int, y: Int): Int = {
+    def add(x: Int, y: Int): Int =
       x + y
-    }
 
     // Usando a função
 
@@ -72,8 +78,4 @@ object creatingVariables {
     val z: Int = y.toInt // Type casting explícito
 
     println(s"6 - Valor de x (Inteiro): $x\n    Valor de y (Double criada a partir de um Inteiro): $y\n    Valor de z (Double que foi convertida para Inteiro): $z")
-
-  }
-
-}
 

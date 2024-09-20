@@ -1,7 +1,13 @@
+/*
+ * path: ../scripts/script03_controlStructures.scala
+ * author: jvitorcardoso
+ * date: 2024-09-19
+*/
 
-object controlStructures {
 
-  def main(args: Array[String]): Unit = {
+object controlStructures:
+
+  @main def m(): Unit =
 
     val day: String = "Wednesday"
 
@@ -54,6 +60,3 @@ object controlStructures {
     println(s"7 - val evenSquared: $evenSquared\n")
     println(s"8 - val sum: $sum\n")
 
-  }
-
-}
