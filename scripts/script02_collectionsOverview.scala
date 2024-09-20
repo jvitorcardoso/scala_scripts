@@ -1,6 +1,12 @@
-object CollectionsOverview {
+/*
+ * path: ../scripts/script02_collectionsOverview.scala
+ * author: jvitorcardoso
+ * date: 2024-09-19
+*/
 
-  def main(args: Array[String]): Unit = {
+object collectionsOverview:
+
+  @main def m(): Unit =
   
     // Arrays, Listas e Maps
 
@@ -36,7 +42,7 @@ object CollectionsOverview {
 
     }
 
-    // Usando Try para tratamento de erros + seguro
+    // Usando Try para tratamento de erros mais seguro
     import scala.util.Try
 
     val tenDividedByZeroWithTry = Try(10 / 0)
@@ -50,6 +56,4 @@ object CollectionsOverview {
 
     }
 
-  }
 
-}
